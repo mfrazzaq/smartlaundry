@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "949719997123",
+    "firebase_url": "https://myproject-597f1.firebaseio.com",
+    "project_id": "myproject-597f1",
+    "storage_bucket": "myproject-597f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949719997123:android:df4766e2367c2ceb326076",
+        "android_client_info": {
+          "package_name": "com.example.ecommercapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949719997123-clejlug5nte18d6ercvqhd5d3c0pm95g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecommercapp",
+            "certificate_hash": "13ce79ad611d7b601fca178ed6e17024278f61e5"
+          }
+        },
+        {
+          "client_id": "949719997123-m91i22om5ma8s41hvi4iv1qcnjm6frkt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecommercapp",
+            "certificate_hash": "c84feb7429a6c133ee6da7795d713028d39300e5"
+          }
+        },
+        {
+          "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWh13RwxRIDMv1O4ThpceC_SwJQuwFEWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949719997123:android:c727e5acd269a409326076",
+        "android_client_info": {
+          "package_name": "com.example.laundarysystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949719997123-8b8nvc61ams9jbikdqnkvfcvbmc967do.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.laundarysystem",
+            "certificate_hash": "22c726f4fb27f48eb9776a3c053f8b422b8151ab"
+          }
+        },
+        {
+          "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWh13RwxRIDMv1O4ThpceC_SwJQuwFEWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949719997123:android:f45d6085f7e4dc3a326076",
+        "android_client_info": {
+          "package_name": "com.example.myandroidproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949719997123-prn97jmli29uipbrgkqrg88btu2vdgtu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myandroidproject",
+            "certificate_hash": "c84feb7429a6c133ee6da7795d713028d39300e5"
+          }
+        },
+        {
+          "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWh13RwxRIDMv1O4ThpceC_SwJQuwFEWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949719997123:android:b673de0b8c5ca0a5326076",
+        "android_client_info": {
+          "package_name": "com.smart.SmartLaundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWh13RwxRIDMv1O4ThpceC_SwJQuwFEWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949719997123-g6ip52qpnh6sf4528jjsbjdi37vdvsof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
