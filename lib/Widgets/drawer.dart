@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 class CommonDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final themeData = Theme.of(context);
     final mediaQueryData = MediaQuery.of(context);
     return Drawer(
       child: Column(
@@ -15,14 +14,9 @@ class CommonDrawer extends StatelessWidget {
           Container(
             width: double.infinity,
             height: mediaQueryData.size.height * 0.4,
-            color: Colors.blueAccent,
-            child: Center(
-              child: Text(
-                'Welcome to the smart laundry',
-                textAlign: TextAlign.center,
-                style:
-                    themeData.textTheme.headline1.copyWith(color: Colors.white),
-              ),
+            child: Image(
+              image: AssetImage('assets/images/logo.jpeg'),
+              fit: BoxFit.cover,
             ),
           ),
           ListTile(
@@ -31,8 +25,8 @@ class CommonDrawer extends StatelessWidget {
             },
             leading: Icon(
               Icons.home,
-              size: 25,
               color: Colors.black,
+              size: 25,
             ),
             title: Text("Home"),
           ),
@@ -40,10 +34,13 @@ class CommonDrawer extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pushReplacementNamed(OrderDetail.routeName);
             },
-            leading: Icon(
-              Icons.details_sharp,
-              size: 25,
-              color: Colors.black,
+            leading: Container(
+              height: 25,
+              width: 25,
+              child: Image(
+                image: AssetImage('assets/icons/details.png'),
+                fit: BoxFit.cover,
+              ),
             ),
             title: Text("Order Detail"),
           ),
@@ -52,10 +49,13 @@ class CommonDrawer extends StatelessWidget {
               Navigator.of(context)
                   .pushReplacementNamed(FeedbackScreen.routeName);
             },
-            leading: Icon(
-              Icons.feedback,
-              size: 25,
-              color: Colors.black,
+            leading: Container(
+              height: 25,
+              width: 25,
+              child: Image(
+                image: AssetImage('assets/icons/feedback.png'),
+                fit: BoxFit.cover,
+              ),
             ),
             title: Text("Feedback"),
           ),
@@ -64,10 +64,13 @@ class CommonDrawer extends StatelessWidget {
               Navigator.of(context)
                   .pushReplacementNamed(ComplainScreen.routeName);
             },
-            leading: Icon(
-              Icons.feedback,
-              size: 25,
-              color: Colors.black,
+            leading: Container(
+              height: 25,
+              width: 25,
+              child: Image(
+                image: AssetImage('assets/icons/complain.png'),
+                fit: BoxFit.cover,
+              ),
             ),
             title: Text("Complain"),
           ),

@@ -1,3 +1,4 @@
+import 'package:SmartLaundry/Screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 
@@ -27,7 +28,7 @@ class _FeedbackFormState extends State<FeedbackForm> {
         if (snapShot.value == null) {
           Scaffold.of(context).showSnackBar(
             SnackBar(
-              content: Text('You have entered the wrong invoice'),
+              content: Text('You have entered the wrong serail number'),
             ),
           );
         } else {
@@ -46,8 +47,8 @@ class _FeedbackFormState extends State<FeedbackForm> {
                 Scaffold.of(context).showSnackBar(
                   SnackBar(
                     content: Text(widget.isComplain
-                        ? 'You have already regestered your complain on the given invoice'
-                        : 'You have already given the feedback on the given invoice'),
+                        ? 'You have already regestered your complain on the given serial nuber'
+                        : 'You have already given the feedback on the given serail number'),
                   ),
                 );
               } else {
@@ -62,12 +63,22 @@ class _FeedbackFormState extends State<FeedbackForm> {
                   'salemanid': response['salemanid'],
                   'serialnumber': response['serial_number']
                 });
+                Scaffold.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(widget.isComplain
+                        ? "Your complain is registered"
+                        : "Your feedback is added"),
+                  ),
+                );
+                Future.delayed(Duration(seconds: 1), () {
+                  Navigator.of(context).pushReplacementNamed(Home.routeName);
+                });
               }
             });
           } else {
             Scaffold.of(context).showSnackBar(
               SnackBar(
-                content: Text('You have entered the wrong invoice'),
+                content: Text('You have entered the wrong serial number'),
               ),
             );
           }
@@ -105,13 +116,13 @@ class _FeedbackFormState extends State<FeedbackForm> {
               child: TextFormField(
                 validator: (value) {
                   if (value.isEmpty) {
-                    return 'Please invoice code in the field';
+                    return 'Please enter serial number in the field';
                   }
                   return null;
                 },
                 keyboardType: TextInputType.number,
                 textInputAction: TextInputAction.next,
-                decoration: InputDecoration(labelText: "Your invoice number"),
+                decoration: InputDecoration(labelText: "Enter serial number"),
                 onSaved: (value) {
                   data['invoice'] = value;
                 },

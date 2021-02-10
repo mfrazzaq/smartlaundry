@@ -5,7 +5,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
-  static const routeName = '/';
+  static const routeName = '/home';
   final List<String> items = [
     'assets/images/1.jpg',
     'assets/images/2.jpg',
@@ -64,9 +64,13 @@ class Home extends StatelessWidget {
                     color: Colors.blueGrey,
                   ),
                 ),
-                Text(
-                  Common.loremepsum,
-                  textAlign: TextAlign.center,
+                Container(
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                  child: Text(
+                    Common.passion,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
                 SizedBox(
                   height: 5,
@@ -83,9 +87,13 @@ class Home extends StatelessWidget {
                     color: Colors.blueGrey,
                   ),
                 ),
-                Text(
-                  Common.loremepsum,
-                  textAlign: TextAlign.center,
+                Container(
+                  margin:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                  child: Text(
+                    Common.commercial,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ],
             ),

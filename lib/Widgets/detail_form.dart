@@ -30,7 +30,7 @@ class _DetailFormState extends State<DetailForm> {
           print("new");
           Scaffold.of(context).showSnackBar(
             SnackBar(
-              content: Text('You have entered the wrong invoice'),
+              content: Text('You have entered the wrong serial number'),
             ),
           );
         } else {
@@ -42,6 +42,7 @@ class _DetailFormState extends State<DetailForm> {
           if (response != null) {
             Map<dynamic, dynamic> result = {
               'Name': response['name'],
+              'Status': response['status'],
               'Item Name': response['cattype'],
               'Serial Number': response['serial_number'],
               'Date of Order': response['order_date'],
@@ -53,7 +54,7 @@ class _DetailFormState extends State<DetailForm> {
           } else {
             Scaffold.of(context).showSnackBar(
               SnackBar(
-                content: Text('You have entered the wrong invoice'),
+                content: Text('You have entered the wrong serial number'),
               ),
             );
           }
@@ -86,7 +87,7 @@ class _DetailFormState extends State<DetailForm> {
             TextFormField(
               keyboardType: TextInputType.number,
               textInputAction: TextInputAction.done,
-              decoration: InputDecoration(labelText: "Enter Code"),
+              decoration: InputDecoration(labelText: "Enter a serial number"),
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Please enter a valid value';
