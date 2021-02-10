@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 class FeedbackForm extends StatefulWidget {
-  bool isComplain;
+  final bool isComplain;
   FeedbackForm({@required this.isComplain});
   @override
   _FeedbackFormState createState() => _FeedbackFormState();
