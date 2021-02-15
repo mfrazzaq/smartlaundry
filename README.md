@@ -3,7 +3,7 @@
 An app for a laundry service where their customers can check the status of their clothes. Give feedback and register complain.
 
 ## UI
-![SplashScreen] (https://theluxek-customer-admin.000webhostapp.com/smartlaundry/1.png)
+![SplashScreen](https://theluxek-customer-admin.000webhostapp.com/smartlaundry/1.png)
 
 ## Getting Started
 
